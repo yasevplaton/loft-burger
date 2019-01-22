@@ -1,3 +1,3 @@
 # loft-burger
 
-LoftSchool project for "web for begginers" course
+LoftSchool project for "web development for beginners" course
