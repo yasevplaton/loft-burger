@@ -1,17 +1,4 @@
-body {
-  background: green;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
-  color: white;
-  text-transform: uppercase;
-  padding: 30px;
-
-  &:after {
-    content: "Я элемент after";
-  }
-
-  &:before {
-    content: "Я элемент before";
-  }
-}
+@import "./layout/normalize";
+@import "./layout/fonts";
+@import "./layout/base";
 
