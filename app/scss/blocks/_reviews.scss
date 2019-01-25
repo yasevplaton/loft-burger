@@ -1,0 +1,19 @@
+.reviews__wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.reviews__item {
+  width: 275px;
+}
+
+.reviews__photo {
+  max-width: 100%;
+  max-height: 100%;
+}

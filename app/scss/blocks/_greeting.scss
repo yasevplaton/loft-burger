@@ -1,0 +1,23 @@
+$greeting: ".greeting";
+
+#{$greeting}__wrapper {
+  background: url("../../../public/data/img/bg/greet-texture-1.png"), url("../../../public/data/img/bg/greet-video-bg.jpg");
+  background-position: center center, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#{$greeting} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#{$greeting}__title--decorate {
+  display: block;
+  font-family: "Lifehack";
+  font-size: 65px;
+}
