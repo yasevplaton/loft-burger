@@ -1,22 +1,38 @@
 .hero {
-  background: url("../../../public/data/img/bg/greet-texture-1.png"), url("../../../public/data/img/bg/greet-video-bg.jpg");
-  background-position: center center, center center;
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
+  background: linear-gradient(to bottom right, rgba(black, 1), rgba(black, .3)), url("../../../public/data/img/bg/greet-texture-1.png"), url("../../../public/data/img/bg/greet-video-bg.jpg");
+  background-position: center center, center center, center center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
   color: white;
   width: 100vw;
   height: 100vh;
+}
+
+.hero__container {
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 .hero__content {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: .85;
+  flex: 1;
   width: 80%;
+}
+
+.hero__image-el {
+  margin-bottom: 50px;
+}
+
+.hero__title-el {
+  margin-left: 20px;
+  width: 50%;
 }
 
 .hero__title--decorate {
   font-family: "Lifehack";
   font-size: 65px;
+  line-height: 60px;
 }

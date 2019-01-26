@@ -1,0 +1,54 @@
+.pointer {
+  position: fixed;
+  top: 90px;
+  right: 50px;
+}
+
+.pointer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pointer__item {
+  margin-bottom: 5px;
+
+  &.active {
+    .pointer__link {
+      border-color: #fff;
+    }
+  }
+}
+
+.pointer__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  transition: .3s;
+
+  &:hover {
+    border-color: #fff;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+  }
+}
+
+// .pointer__item.active {
+//   .pointer__link {
+//     border-color: #fff;
+//   }
+// }

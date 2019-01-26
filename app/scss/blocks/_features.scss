@@ -3,10 +3,17 @@ $icons: ("meat", "hand", "natural");
 .features__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .features__item {
   text-align: center;
+  flex: 1 1 280px;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:before {
     content: "";
@@ -14,6 +21,7 @@ $icons: ("meat", "hand", "natural");
     background: center center no-repeat;
     width: 100px;
     height: 100px;
+    margin-bottom: 35px;
   }
 }
 
@@ -27,8 +35,11 @@ $icons: ("meat", "hand", "natural");
 
 .features__title {
   font-family: "Lifehack";
+  line-height: 28px;
 }
 
 .features__desc {
   font-weight: 300;
+  color: rgba(47, 50, 52, 0.8);
+  line-height: 24px;
 }
