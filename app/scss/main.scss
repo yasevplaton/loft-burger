@@ -1,9 +1,20 @@
+// colors
+$red: #e45028;
+$yellow: #f9b43b;
+$grey: #2f3234;
+
+// normalize
 @import "./layout/normalize";
+
+// layout rules
 @import "./layout/fonts";
 @import "./layout/base";
-@import "./blocks/greeting";
+@import "./blocks/hero";
+
+// blocks
 @import "./blocks/header";
 @import "./blocks/nav";
+@import "./blocks/btn";
 @import "./blocks/title";
 @import "./blocks/arrow";
 @import "./blocks/about-us";

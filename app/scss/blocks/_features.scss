@@ -1,3 +1,5 @@
+$icons: ("meat", "hand", "natural");
+
 .features__list {
   display: flex;
   justify-content: space-between;
@@ -5,6 +7,22 @@
 
 .features__item {
   text-align: center;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    background: center center no-repeat;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@each $icon in $icons {
+  .features__item--#{$icon} {
+    &:before {
+      background-image: url("../../../public/data/img/icons/#{$icon}.png");
+    }
+  }
 }
 
 .features__title {

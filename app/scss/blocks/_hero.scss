@@ -1,23 +1,22 @@
-$greeting: ".greeting";
-
-#{$greeting}__wrapper {
+.hero {
   background: url("../../../public/data/img/bg/greet-texture-1.png"), url("../../../public/data/img/bg/greet-video-bg.jpg");
   background-position: center center, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   color: white;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
-#{$greeting} {
+.hero__content {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: .85;
+  width: 80%;
 }
 
-#{$greeting}__title--decorate {
-  display: block;
+.hero__title--decorate {
   font-family: "Lifehack";
   font-size: 65px;
 }
