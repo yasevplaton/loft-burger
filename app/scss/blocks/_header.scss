@@ -8,12 +8,20 @@
 .header__col {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-family: "Ubuntu", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 500;
 }
+
+.header__col--left {
+  justify-content: flex-start;
+}
+
+.header__col--right {
+  justify-content: flex-end;
+}
+
 
 .hero__btn {
   color: #fff;
