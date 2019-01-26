@@ -28,7 +28,7 @@ $icons: ("meat", "hand", "natural");
 @each $icon in $icons {
   .features__item--#{$icon} {
     &:before {
-      background-image: url("../../../public/data/img/icons/#{$icon}.png");
+      background-image: url("../data/img/icons/#{$icon}.png");
     }
   }
 }
