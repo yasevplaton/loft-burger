@@ -34,7 +34,10 @@
 }
 
 .hero__title--decorate {
+  display: block;
+  color: #fff;
   font-family: "Lifehack";
   font-size: 62px;
   line-height: 59px;
+  margin-top: 3%;
 }

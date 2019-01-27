@@ -27,4 +27,9 @@
   color: #fff;
   background: $red;
   margin-left: 15px;
+  transition: .3s;
+
+  &:hover {
+    background: red;
+  }
 }

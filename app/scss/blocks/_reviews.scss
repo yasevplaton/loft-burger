@@ -48,4 +48,10 @@
 .reviews__btn {
   color: #fff;
   background: $grey;
+  transition: .3s;
+
+  &:hover {
+    background: rgb(19, 19, 19);
+  }
+
 }
