@@ -3,10 +3,6 @@ $red: #e45028;
 $yellow: #f9b43b;
 $grey: #2f3234;
 
-@function pxToRem($px) {
-  @return $px / 16px + 0rem;
-}
-
 // normalize
 @import "./layout/normalize";
 
@@ -25,4 +21,6 @@ $grey: #2f3234;
 @import "./blocks/arrow";
 @import "./blocks/about-us";
 @import "./blocks/features";
+@import "./blocks/team";
+@import "./blocks/menu";
 @import "./blocks/reviews";

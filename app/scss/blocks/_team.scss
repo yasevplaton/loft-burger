@@ -1,0 +1,71 @@
+.team {
+  background: url("../data/img/bg/team.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.team__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  opacity: 0.93;
+  background: rgb(51,50,49);
+}
+
+.team__content-container {
+  padding: 6rem 6.2rem;
+}
+
+.team__item {
+  color: #fff;
+  margin-top: 2.1875rem;
+
+  &--active {
+    .team__person-name {
+      color: $yellow;
+    }
+
+    .team__person-content {
+      height: auto;
+    }
+  }
+}
+
+.team__person-name {
+  font-family: 'Gagalin', sans-serif;
+  color: inherit;
+}
+
+.team__person-content {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.team__person-img {
+  width: 100px;
+  flex-shrink: 0;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.team__text-el {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-left: 1.25rem;
+}
+
+.team__person-position {
+  font-weight: bold;
+}
+
+.team__person-desc {
+  font-weight: 300;
+}
