@@ -10,8 +10,8 @@
 
 .hero__container {
   justify-content: flex-start;
-  padding-top: 10px;
-  padding-bottom: 40px;
+  padding-top: .9%;
+  padding-bottom: 4%;
 }
 
 .hero__content {
@@ -26,6 +26,11 @@
 .hero__image-el {
   margin-bottom: 7%;
   margin-left: .5%;
+  width: 50%;
+}
+
+.hero__img {
+  max-width: 100%;
 }
 
 .hero__title-el {
@@ -37,7 +42,18 @@
   display: block;
   color: #fff;
   font-family: "Lifehack";
-  font-size: 62px;
-  line-height: 59px;
+  font-size: 3.875rem;
+  line-height: 3.687rem;
   margin-top: 3%;
+}
+
+.hero__btn {
+  color: #fff;
+  background: $red;
+  margin-left: 1rem;
+  transition: .3s;
+
+  &:hover {
+    background: red;
+  }
 }

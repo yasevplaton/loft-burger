@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -20,16 +20,4 @@
 
 .header__col--right {
   justify-content: flex-end;
-}
-
-
-.hero__btn {
-  color: #fff;
-  background: $red;
-  margin-left: 15px;
-  transition: .3s;
-
-  &:hover {
-    background: red;
-  }
 }

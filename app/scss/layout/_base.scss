@@ -5,6 +5,7 @@
 html, body {
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
+  font-size: 16px;
 }
 
 ul {
@@ -45,6 +46,7 @@ table {
 
 .container {
   max-width: 940px;
+  width: auto;
   margin: 0 auto;
   height: 100%;
   display: flex;
