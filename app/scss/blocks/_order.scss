@@ -1,0 +1,11 @@
+.order {
+  background: url("../data/img/bg/order-texture.png"), url("../data/img/bg/order-bg-img.jpg");
+  background-position: center center, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: white;
+}
+
+.order__container {
+  justify-content: center;
+}
