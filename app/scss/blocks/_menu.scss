@@ -1,3 +1,6 @@
+$bg-images: ("meat-eaters", "vegetarian", "diet");
+$xPosition: (78%, 87%, 94%);
+
 .menu {
   background: url("../data/img/bg/menu.jpg");
   background-position: center center;
@@ -12,23 +15,67 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: 50%;
-  transform: rotate(-90deg);
+  width: auto;
+  display: flex;
+  max-width: 70%;
+  justify-content: flex-end;
+  height: 100%
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &--active {
+    .menu__desc {
+      width: auto;
+      padding: 3.75rem 2.1875rem;
+    }
+  }
+}
+
+.menu__col {
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+
+  &:hover {
+    cursor: pointer;
+
+    .menu__label {
+      color: $yellow;
+    }
+  }
+}
+
+@each $img, $x in zip($bg-images, $xPosition) {
+  .menu__col.menu__col--#{$img} {
+      background-image: linear-gradient(rgba(black, .7), rgba(black, .7)), url("../data/img/bg/menu-items/#{$img}.jpg");
+      background-position: center center, #{$x} center;
+  }
 }
 
 .menu__label {
   color: inherit;
   font-family: "Gagalin";
-  padding-top: 1.5625rem;
-  padding-bottom: 1.5625rem;
-  padding-left: 2.5rem;
-  font-size: 2rem;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-size: 2.5rem;
+  transform: rotate(-90deg) translateX(74%);
+  white-space: nowrap;
 }
 
 .menu__desc {
-  height: 0;
+  width: 0;
+  height: 100%;
   overflow: hidden;
+  transition: .3s;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  opacity: 0.93;
+  background: rgb(51,50,49);
 }
