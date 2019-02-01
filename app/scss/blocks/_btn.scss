@@ -6,4 +6,14 @@
   font-weight: 500;
   padding: .65rem .89rem;
   border-radius: 0.3125rem;
+  color: inherit;
+}
+
+.btn--submit {
+  background: $red;
+  transition: .3s;
+
+  &:hover {
+    background: red;
+  }
 }

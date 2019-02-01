@@ -1,21 +1,29 @@
 .title {
   font-family: "Gagalin";
   font-size: 4.5rem;
-}
 
-.title--hero {
-  color: $yellow;
-}
+  &--hero {
+    color: $yellow;
+  }
 
-.title--about-us {
-  margin-bottom: 1rem;
-}
+  &--about-us {
+    margin-bottom: 1rem;
+  }
 
-.title--team {
-  color: $yellow;
-}
+  &--team {
+    color: $yellow;
+  }
 
-.title--menu {
-  display: inline-block;
-  margin: 5.7rem;
+  &--menu {
+    display: inline-block;
+    margin: 5.7rem;
+  }
+
+  &--order {
+    color: $yellow;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 }
