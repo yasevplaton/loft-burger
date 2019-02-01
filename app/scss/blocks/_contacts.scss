@@ -1,0 +1,23 @@
+.contacts {
+  background: url("../data/img/bg/map.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.contacts__content {
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.contacts__address {
+  font-weight: 300;
+}
+
+.contacts__phone {
+  color: $red;
+  font-weight: bold;
+}
