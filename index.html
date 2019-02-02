@@ -19,7 +19,9 @@
             <header class="header">
               <div class="header__col header__col--left">
                 <div class="logo">
-                  <img src="./public/data/img/content/logo.png" alt="Логотип бургерной" class="logo__img">
+                  <svg class="logo-icon" viewBox="0 0 98.265 74.317">
+                    <use xlink:href="./public/data/sprite.svg#logo"></use>
+                  </svg>
                 </div>
               </div>
               <div class="header__col header__col--right">
@@ -59,7 +61,11 @@
                 <h1 class="title title--hero">Мы делаем<span class="hero__title--decorate">натуральные бургеры</span></h1>
               </div>
             </div>
-            <a href="#" class="arrow"></a>
+            <a href="#" class="arrow">
+              <svg class="arrow-icon" viewBox="0 0 28.685 14.479">
+                <use xlink:href="./public/data/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </a>
           </div>
         </section>
         <section class="section about-us">
@@ -68,20 +74,35 @@
               <h2 class="title title--about-us">Мы лучшие</h2>
               <div class="features">
                 <ul class="features__list">
-                  <li class="features__item features__item--meat">
-                    <h3 class="features__title">100% свежее мясо</h3>
-                    <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
-                      анапест. Ямб неравномерен.</p>
+                  <li class="features__item">
+                    <svg class="features__icon" viewBox="0 0 96.428 89.246">
+                      <use xlink:href="./public/data/sprite.svg#meat"></use>
+                    </svg>
+                    <div class="features___text">
+                      <h3 class="features__title">100% свежее мясо</h3>
+                      <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
+                        анапест. Ямб неравномерен.</p>
+                    </div>
                   </li>
-                  <li class="features__item features__item--hand">
-                    <h3 class="features__title">Ручная сборка</h3>
-                    <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
-                      анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                  <li class="features__item">
+                    <svg class="features__icon" viewBox="0 0 73 85.875">
+                      <use xlink:href="./public/data/sprite.svg#hand"></use>
+                    </svg>
+                    <div class="features__text">
+                      <h3 class="features__title">Ручная сборка</h3>
+                      <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
+                        анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                    </div>
                   </li>
-                  <li class="features__item features__item--natural">
-                    <h3 class="features__title">Натуральные ингредиенты</h3>
-                    <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
-                      анапест.</p>
+                  <li class="features__item">
+                    <svg class="features__icon" viewBox="0 0 88 75.534">
+                      <use xlink:href="./public/data/sprite.svg#natural"></use>
+                    </svg>
+                    <div class="features__text">
+                      <h3 class="features__title">Натуральные ингредиенты</h3>
+                      <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
+                        анапест.</p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -341,20 +362,23 @@
                     <textarea class="form__textarea" name="comment" id="comment"></textarea>
                   </label>
                 </div>
-                <div class="form__row">
-                  <label for="card-no" class="form__block form__block--inline">
+                <div class="form__row form__row--radio">
+                  <label for="card-no" class="form__block form__block--inline" tabindex="0">
                     <input type="radio" class="form__radio" name="card" id="card-no" value="no">
-                    <h3 class="form__label">Потребуется сдача</h3>
+                    <span class="form__radio-custom"></span>
+                    <h3 class="form__label form__label--inline">Потребуется сдача</h3>
                   </label>
-                  <label for="card-yes" class="form__block form__block--inline">
+                  <label for="card-yes" class="form__block form__block--inline" tabindex="0">
                     <input type="radio" class="form__radio" name="card" id="card-yes" value="yes" checked>
-                    <h3 class="form__label">Оплата по карте</h3>
+                    <span class="form__radio-custom"></span>
+                    <h3 class="form__label form__label--inline">Оплата по карте</h3>
                   </label>
                 </div>
                 <div class="form__row">
-                  <label for="no-callback" class="form__block form__block--inline">
-                    <input type="checkbox" class="form__checkxbox" name="no-callback" id="no-callback" checked>
-                    <h3 class="form__label">Не перезванивать</h3>
+                  <label for="no-callback" class="form__block form__block--inline" tabindex="0">
+                    <input type="checkbox" class="form__checkbox" name="no-callback" id="no-callback" checked>
+                    <span class="form__checkbox-custom"></span>
+                    <h3 class="form__label form__label--inline">Не перезванивать</h3>
                   </label>
                 </div>
                 <div class="form__row">
@@ -372,20 +396,44 @@
               <div class="footer__col footer__col--left">
                 <address class="contacts__content">
                   <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                  <a href="tel:+7(812)377-13-77" class="contacts__phone">+7 (812) 377-13-77</a>
+                  <a href="tel:+7(812)377-13-77" class="contacts__phone">
+                    <svg class="contacts__phone-icon" viewBox="0 0 11 11">
+                      <use xlink:href="./public/data/sprite.svg#phone"></use>
+                    </svg>
+                    +7 (812) 377-13-77
+                  </a>
                 </address>
               </div>
               <div class="footer__col footer__col--right">
                 <div class="socials">
                   <ul class="socials__list">
                     <li class="socials__item">
-                      <a href="#" class="socials__link">VK</a>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon" viewBox="0 0 126 72">
+                          <use xlink:href="./public/data/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="socials__item">
-                      <a href="#" class="socials__link">FB</a>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--fb" viewBox="0 0 36.711 36.711">
+                          <use xlink:href="./public/data/sprite.svg#fb"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="socials__item">
-                      <a href="#" class="socials__link">TW</a>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--inst" viewBox="0 0 36.663 36.664">
+                          <use xlink:href="./public/data/sprite.svg#inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--tw" viewBox="0 0 37.453 31.21">
+                          <use xlink:href="./public/data/sprite.svg#tw"></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </div>

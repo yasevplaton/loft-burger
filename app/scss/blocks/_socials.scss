@@ -4,19 +4,34 @@
   justify-content: flex-end;
 }
 
+.socials__item {
+  margin-right: rem(20px);
+}
+
 .socials__link {
+  display: inline-block;
+   &:hover {
+     .socials__icon {
+       opacity: 1;
+     }
+   }
 
-  display: flex;
-  align-items: center;
+}
 
-  &:before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #fff;
-    margin: 0 10px;
+.socials__icon {
+  fill: #fff;
+  opacity: .3;
+  width: rem(23px);
+  height: rem(13px);
+  transition: opacity .3s;
+
+  &--fb, &--inst {
+    width: rem(20px);
+    height: rem(20px);
   }
 
+  &--tw {
+    width: rem(20px);
+    height: rem(16px);
+  }
 }

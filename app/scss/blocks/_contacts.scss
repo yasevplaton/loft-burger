@@ -17,7 +17,20 @@
   font-weight: 300;
 }
 
+.contacts__phone-block {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__phone-icon {
+  width: rem(12px);
+  height: rem(11px);
+  margin-right: .5rem;
+  fill: $red;
+}
+
 .contacts__phone {
   color: $red;
   font-weight: bold;
+  display: inline-block;
 }

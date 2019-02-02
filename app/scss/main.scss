@@ -2,6 +2,11 @@
 $red: #e45028;
 $yellow: #f9b43b;
 $grey: #2f3234;
+$formColor: #e35028;
+
+@function rem($px) {
+  @return $px/16px + 0rem;
+}
 
 // normalize
 @import "./layout/normalize";
