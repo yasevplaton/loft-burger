@@ -6,11 +6,9 @@
 }
 
 .about-us__container {
-  justify-content: center;
+  justify-content: center;  
 }
 
 .about-us__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 65%;
 }

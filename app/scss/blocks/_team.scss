@@ -22,11 +22,15 @@
 
 .team__item {
   color: #fff;
-  margin-top: 2.1875rem;
+  margin-top: 1.4rem;
 
   &--active {
     .team__person-name {
       color: $yellow;
+
+      &:before {
+        transform: rotate(180deg);
+      }
     }
 
     .team__person-content {
@@ -38,13 +42,28 @@
 .team__person-name {
   font-family: 'Gagalin', sans-serif;
   color: inherit;
+  display: flex;
+  font-size: rem(14px);
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid $yellow;
+    margin-right: rem(10px);
+  }
 }
 
 .team__person-content {
   display: flex;
   height: 0;
   overflow: hidden;
-  margin-top: 1rem;
+  margin-top: .7rem;
+  padding-left: 1rem;
 }
 
 .team__person-img {
