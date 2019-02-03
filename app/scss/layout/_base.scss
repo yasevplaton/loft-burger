@@ -10,10 +10,6 @@ html, body {
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
   font-size: 16px;
-
-  @include tablets {
-    font-size: 15px;
-  }
 }
 
 ul {

@@ -6,6 +6,7 @@
   @include tablets {
     flex-direction: column;
     align-items: center;
+    width: 65%;
   }
 }
 
@@ -19,6 +20,7 @@
 
   @include tablets {
     margin-right: 0;
+    width: 100%;
   }
 }
 

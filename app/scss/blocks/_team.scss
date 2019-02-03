@@ -6,6 +6,17 @@
   position: relative;
 }
 
+.team__content-container {
+  padding: 6rem 6.2rem;
+
+  @include tablets {
+    text-align: center;
+    padding-bottom: 22%;
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+
 .team__content {
   position: absolute;
   top: 0;
@@ -24,13 +35,6 @@
   }
 }
 
-.team__content-container {
-  padding: 6rem 6.2rem;
-
-  @include tablets {
-    text-align: center;
-  }
-}
 
 .team__list {
   @include tablets {
@@ -57,6 +61,12 @@
       height: auto;
     }
   }
+
+  @include tablets {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .team__person-name {
@@ -79,10 +89,10 @@
 
   @include tablets {
     display: inline-block;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     
     &:before {
-      margin-bottom: .5rem;
+      margin-bottom: 0.3rem;
     }
   }
 }
@@ -97,6 +107,7 @@
   @include tablets {
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
   }
 }
 
@@ -116,6 +127,7 @@
 
   @include tablets {
     margin-left: 0;
+    padding-top: 1rem;
   }
 }
 

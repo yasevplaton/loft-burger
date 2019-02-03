@@ -22,6 +22,7 @@
 
   @include tablets {
     flex-direction: column;
+    padding-bottom: 8%;
   }
 }
 
@@ -32,6 +33,7 @@
 
   @include tablets {
     margin-left: 0;
+    margin-bottom: 0;
     width: 64%;
   }
 }

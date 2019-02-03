@@ -1,5 +1,7 @@
 .hamburger-menu {
   display: none;
+  margin-left: 2rem;
+  margin-right: 1rem;
   cursor: pointer;
 
   @include tablets {
@@ -14,5 +16,4 @@
   margin: 6px 0;
   transition: .4s;
   border-radius: 2px;
-  margin-left: 2rem;
 }

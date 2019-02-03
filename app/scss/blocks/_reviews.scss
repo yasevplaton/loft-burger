@@ -38,6 +38,7 @@
 
   @include tablets {
     text-align: center;
+    padding: 1.9rem 3.25rem;
   }
 }
 
@@ -45,6 +46,10 @@
   font-family: "Gagalin";
   font-size: 0.875rem;
   margin-bottom: 7%;
+
+  @include tablets {
+    margin-bottom: 0;
+  }
 }
 
 .reviews__text {
