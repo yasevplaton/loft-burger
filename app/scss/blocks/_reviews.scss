@@ -21,6 +21,11 @@
       opacity: 1;
     }
   }
+
+  @include tablets {
+    flex-basis: 50%;
+    height: 25%;
+  }
 }
 
 .reviews__content {
@@ -30,6 +35,10 @@
   padding: 2.9rem 1.25rem;
   opacity: 0;
   transition: opacity .3s;
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .reviews__name {

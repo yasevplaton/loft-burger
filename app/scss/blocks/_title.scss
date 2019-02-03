@@ -19,6 +19,10 @@
   &--menu {
     display: inline-block;
     margin: 5.7rem;
+
+    @include tablets {
+      margin: 5rem 2rem;
+    }
   }
 
   &--order {

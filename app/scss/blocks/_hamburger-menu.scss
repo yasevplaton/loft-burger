@@ -1,0 +1,18 @@
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+
+  @include tablets {
+    display: inline-block;
+  }
+}
+
+.hamburger-menu__bar1, .hamburger-menu__bar2, .hamburger-menu__bar3 {
+  width: 24px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: .4s;
+  border-radius: 2px;
+  margin-left: 2rem;
+}

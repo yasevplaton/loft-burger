@@ -51,6 +51,10 @@ $xPosition: (78%, 87%, 94%);
       color: $yellow;
     }
   }
+
+  @include tablets {
+    width: 4rem;
+  }
 }
 
 @each $img, $x in zip($bg-images, $xPosition) {

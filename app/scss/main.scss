@@ -4,6 +4,23 @@ $yellow: #f9b43b;
 $grey: #2f3234;
 $formColor: #e35028;
 
+// devices
+$tablet-width: 768px;
+$mobile-width: 480px;
+
+@mixin tablets {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobiles {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+// functions
 @function rem($px) {
   @return $px/16px + 0rem;
 }
@@ -22,6 +39,7 @@ $formColor: #e35028;
 @import "./blocks/logo";
 @import "./blocks/nav";
 @import "./blocks/btn";
+@import "./blocks/hamburger-menu";
 @import "./blocks/title";
 @import "./blocks/arrow";
 @import "./blocks/about-us";

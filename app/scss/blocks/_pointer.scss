@@ -2,6 +2,10 @@
   position: fixed;
   top: 90px;
   right: 50px;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .pointer__list {
