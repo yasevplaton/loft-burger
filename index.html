@@ -80,9 +80,11 @@
               <div class="features">
                 <ul class="features__list">
                   <li class="features__item">
-                    <svg class="features__icon" viewBox="0 0 96.428 89.246">
-                      <use xlink:href="./public/data/sprite.svg#meat"></use>
-                    </svg>
+                    <div class="features__icon-wrapper">
+                      <svg class="features__icon" viewBox="0 0 96.428 89.246">
+                        <use xlink:href="./public/data/sprite.svg#meat"></use>
+                      </svg>
+                    </div>
                     <div class="features__text">
                       <h3 class="features__title">100% свежее мясо</h3>
                       <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
@@ -90,9 +92,11 @@
                     </div>
                   </li>
                   <li class="features__item">
-                    <svg class="features__icon" viewBox="0 0 73 85.875">
-                      <use xlink:href="./public/data/sprite.svg#hand"></use>
-                    </svg>
+                    <div class="features__icon-wrapper">
+                      <svg class="features__icon" viewBox="0 0 73 85.875">
+                        <use xlink:href="./public/data/sprite.svg#hand"></use>
+                      </svg>
+                    </div>
                     <div class="features__text">
                       <h3 class="features__title">Ручная сборка</h3>
                       <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
@@ -100,9 +104,11 @@
                     </div>
                   </li>
                   <li class="features__item">
-                    <svg class="features__icon" viewBox="0 0 88 75.534">
-                      <use xlink:href="./public/data/sprite.svg#natural"></use>
-                    </svg>
+                    <div class="features__icon-wrapper">
+                      <svg class="features__icon" viewBox="0 0 88 75.534">
+                        <use xlink:href="./public/data/sprite.svg#natural"></use>
+                      </svg>
+                    </div>
                     <div class="features__text">
                       <h3 class="features__title">Натуральные ингредиенты</h3>
                       <p class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой
@@ -249,6 +255,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews2.jpg)">
@@ -259,6 +266,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews3.jpg)">
@@ -269,6 +277,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews4.jpg)">
@@ -279,6 +288,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews5.jpg)">
@@ -289,6 +299,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews6.jpg)">
@@ -299,6 +310,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews7.jpg)">
@@ -309,6 +321,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews8.jpg)">
@@ -319,6 +332,7 @@
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
+                <button type="button" class="btn reviews__btn-mobile">Читать отзыв</button>
               </div>
             </li>
           </ul>
@@ -357,11 +371,11 @@
                       <h3 class="form__label">Корпус</h3>
                       <input type="text" class="form__input" name="house-part" id="house-part">
                     </label>
-                    <label for="apartment" class="form__block">
+                    <label for="apartment" class="form__block form__block--margin-del">
                       <h3 class="form__label">Квартира</h3>
                       <input type="text" class="form__input" name="apartment" id="apartment">
                     </label>
-                    <label for="floor" class="form__block">
+                    <label for="floor" class="form__block form__block--mobile-del">
                       <h3 class="form__label">Этаж</h3>
                       <input type="text" class="form__input" name="floor" id="floor">
                     </label>
@@ -393,7 +407,7 @@
                       <h3 class="form__label form__label--inline">Не перезванивать</h3>
                     </label>
                   </div>
-                  <div class="form__row">
+                  <div class="form__row form__row--btns">
                     <button type="submit" class="btn btn--submit">Заказать</button>
                     <button type="reset" class="btn btn--reset">Очистить</button>
                   </div>

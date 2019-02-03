@@ -1,6 +1,10 @@
 .features__list {
   display: flex;
   justify-content: space-between;
+
+  @include mobiles {
+    flex-direction: column;
+  }
 }
 
 .features__item {
@@ -11,11 +15,25 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include mobiles {
+    margin-right: 0;
+    flex: 1 1 10rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+  }
 }
 
 .features__icon {
   width: rem(90px);
   height: rem(90px);
+
+  @include mobiles {
+    width: 9rem;
+    height: 6.5rem;
+  }
 }
 
 .features__text {
@@ -26,6 +44,10 @@
   font-family: "Lifehack";
   line-height: 1.75rem;
   font-size: 1.5rem;
+
+  @include mobiles {
+    font-size: 1.7rem;
+  }
 }
 
 .features__desc {
@@ -33,4 +55,8 @@
   color: rgba(47, 50, 52, 0.8);
   line-height: 1.5rem;
   font-size: 0.875rem;
+
+  @include mobiles {
+    font-size: 1rem;
+  }
 }

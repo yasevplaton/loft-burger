@@ -19,7 +19,11 @@ $xPosition: (78%, 87%, 94%);
   display: flex;
   max-width: 70%;
   justify-content: flex-end;
-  height: 100%
+  height: 100%;
+
+  @include mobiles {
+    max-width: 100%;
+  }
 }
 
 .menu__item {
@@ -31,6 +35,10 @@ $xPosition: (78%, 87%, 94%);
     .menu__desc {
       width: auto;
       padding: 3.75rem 2.1875rem;
+
+      @include mobiles {
+        padding: 1.75rem 1.1875rem;
+      }
     }
   }
 }
@@ -55,6 +63,10 @@ $xPosition: (78%, 87%, 94%);
   @include tablets {
     width: 4rem;
   }
+
+  @include mobiles {
+    width: 3rem;
+  }
 }
 
 @each $img, $x in zip($bg-images, $xPosition) {
@@ -71,6 +83,10 @@ $xPosition: (78%, 87%, 94%);
   transform: rotate(-90deg) translateX(74%);
   white-space: nowrap;
   transition: color .3s;
+
+  @include mobiles {
+    font-size: 1.5rem;
+  }
 }
 
 .menu__desc {

@@ -7,6 +7,10 @@
   padding: .65rem .89rem;
   border-radius: 0.3125rem;
   color: inherit;
+
+  @include mobiles {
+    font-size: 1rem;
+  }
 }
 
 .btn--submit {
@@ -23,4 +27,8 @@
   font-size: 0.875rem;
   text-transform: initial;
   margin-left: .5rem;
+
+  @include mobiles {
+    font-size: 1rem;
+  }
 }

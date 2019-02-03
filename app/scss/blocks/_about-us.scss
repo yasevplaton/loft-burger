@@ -10,5 +10,12 @@
 }
 
 .about-us__content {
-  padding-bottom: 18%;
+
+  @include tablets {
+    padding-bottom: 18%;
+  }
+
+  @include mobiles {
+    padding-bottom: 14%;
+  }
 }

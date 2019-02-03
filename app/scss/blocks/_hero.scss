@@ -10,6 +10,10 @@
   justify-content: flex-start;
   padding-top: .9%;
   padding-bottom: 3.7%;
+
+  @include mobiles {
+    padding-bottom: 5.7%;
+  }
 }
 
 .hero__content {
@@ -36,6 +40,10 @@
     margin-bottom: 0;
     width: 64%;
   }
+
+  @include mobiles {
+    width: 86%;
+  }
 }
 
 .hero__img {
@@ -50,6 +58,10 @@
     margin-left: 0;
     width: 85%;
     text-align: center;
+  }
+
+  @include mobiles {
+    margin-top: 4%;
   }
 }
 

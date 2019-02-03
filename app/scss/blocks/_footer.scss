@@ -13,6 +13,11 @@
 .footer__container {
   flex-direction: row;
   justify-content: space-between;
+
+  @include mobiles {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__col {
@@ -23,10 +28,24 @@
 
   &--left {
     justify-content: flex-start;
+
+    @include mobiles {
+      justify-content: center;
+    }
   }
 
   &--right {
     justify-content: flex-end;
+
+    @include mobiles {
+      justify-content: center;
+      padding-bottom: 2%;
+    }
+  }
+
+  @include mobiles {
+    width: 100%;
+    height: auto;
   }
 
 }

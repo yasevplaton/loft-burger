@@ -1,4 +1,9 @@
 .logo-icon {
   width: 5.6rem;
   height: 4.4rem;
+
+  @include mobiles {
+    width: 7.6rem;
+    height: 5.4rem;
+  }
 }

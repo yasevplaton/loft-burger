@@ -2,4 +2,9 @@
   width: rem(29px);
   height: rem(14px);
   fill: #fff;
+
+  @include mobiles {
+    width: 6.8125rem;
+    height: 1.1rem;
+  }
 }

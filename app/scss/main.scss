@@ -7,6 +7,8 @@ $formColor: #e35028;
 // devices
 $tablet-width: 768px;
 $mobile-width: 480px;
+$min-device-width: 320px;
+
 
 @mixin tablets {
   @media (max-width: $tablet-width) {
@@ -16,6 +18,12 @@ $mobile-width: 480px;
 
 @mixin mobiles {
   @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin min-devices {
+  @media (max-width: $min-device-width) {
     @content;
   }
 }

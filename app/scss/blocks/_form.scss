@@ -8,6 +8,10 @@
     align-items: center;
     width: 65%;
   }
+
+  @include mobiles {
+    width: 100%;
+  }
 }
 
 .form__col {
@@ -36,10 +40,41 @@
     @include tablets {
       width: 80%;
     }
+
+    @include mobiles {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &--btns {
+    
+    @include mobiles {
+      display: flex;
+      justify-content: center;
+      margin-top: 13%;
+    }
+
   }
  
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include tablets {
+
+    &:last-child {
+      margin-bottom: 1.25rem;
+    }
+
+  }
+
+  @include mobiles {
+
+    &:last-child {
+      margin-bottom: 1.25rem;
+    }
+
   }
 
 }
@@ -51,10 +86,30 @@
   &--inline {
     display: flex;
     align-items: center;
+
+    @include mobiles {
+      justify-content: center;
+    }
   }
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &--mobile-del {
+
+    @include mobiles {
+      display: none;
+    }
+
+  }
+
+  &--margin-del {
+
+    @include mobiles {
+      margin-right: 0;
+    }
+
   }
 }
 
@@ -66,6 +121,10 @@
   &--inline {
     margin-bottom: 0;
   }
+
+  @include mobiles {
+    font-size: 1rem;
+  }
 }
 
 .form__input, .form__textarea {
@@ -74,11 +133,19 @@
   background: #fff;
   padding: 0.5rem 1.2rem;
   width: 100%;
+
+  @include mobiles {
+    padding: .8rem 1.2rem;
+  }
 }
 
 .form__textarea {
   height: 7rem;
   resize: none;
+
+  @include mobiles {
+    height: 8rem;
+  }
 }
 
 .form__radio, .form__checkbox {

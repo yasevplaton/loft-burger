@@ -15,6 +15,11 @@
     padding-left: 13rem;
     padding-right: 13rem;
   }
+
+  @include mobiles {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .team__content {
@@ -95,6 +100,10 @@
       margin-bottom: 0.3rem;
     }
   }
+
+  @include mobiles {
+    font-size: 1.8rem;
+  }
 }
 
 .team__person-content {
@@ -128,6 +137,10 @@
   @include tablets {
     margin-left: 0;
     padding-top: 1rem;
+  }
+
+  @include mobiles {
+    font-size: 1rem;
   }
 }
 
