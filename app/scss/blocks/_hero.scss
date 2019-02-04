@@ -26,7 +26,8 @@
 
   @include tablets {
     flex-direction: column;
-    padding-bottom: 8%;
+    padding-bottom: 0%;
+    margin-bottom: 0;
   }
 }
 
@@ -38,11 +39,11 @@
   @include tablets {
     margin-left: 0;
     margin-bottom: 0;
-    width: 64%;
+    width: 44%;
   }
 
   @include mobiles {
-    width: 86%;
+    width: 62%;
   }
 }
 
@@ -72,6 +73,10 @@
   font-size: 3.875rem;
   line-height: 3.687rem;
   margin-top: 3%;
+
+  @include laptops {
+    font-size: 2.875rem;
+  }
 }
 
 .hero__btn {

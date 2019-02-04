@@ -36,6 +36,10 @@ $xPosition: (78%, 87%, 94%);
       width: auto;
       padding: 3.75rem 2.1875rem;
 
+      @include laptops {
+        padding: 2% 2%;
+      }
+
       @include mobiles {
         padding: 1.75rem 1.1875rem;
       }
@@ -92,7 +96,8 @@ $xPosition: (78%, 87%, 94%);
 .menu__desc {
   width: 0;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   transition: .3s;
   font-size: 0.875rem;
   font-weight: 300;

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include mobiles {
+  @include mini-tablets {
     flex-direction: column;
   }
 }
@@ -16,9 +16,9 @@
     margin-right: 0;
   }
 
-  @include mobiles {
+  @include mini-tablets {
     margin-right: 0;
-    flex: 1 1 10rem;
+    flex: 1 1 auto;
     text-align: left;
     display: flex;
     align-items: center;
@@ -30,9 +30,19 @@
   width: rem(90px);
   height: rem(90px);
 
+  @include mini-tablets {
+    width: 7.625rem;
+    height: 4.625rem;
+  }
+
   @include mobiles {
     width: 9rem;
     height: 6.5rem;
+  }
+
+  @include mini-mobiles {
+    width: 6rem;
+    height: 4.5rem;
   }
 }
 

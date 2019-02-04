@@ -26,6 +26,15 @@
     flex-basis: 50%;
     height: 25%;
   }
+
+  @include mini-mobiles {
+    flex-basis: 100%;
+    height: 25%;
+
+    &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+      display: none;
+    }
+  }
 }
 
 .reviews__content {
@@ -39,6 +48,10 @@
   @include tablets {
     text-align: center;
     padding: 1.9rem 3.25rem;
+  }
+
+  @include mini-tablets {
+    padding: 10% 17%;
   }
 
   @include mobiles {
@@ -66,6 +79,11 @@
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem;
+
+  @include tablets {
+    max-height: 60%;
+    overflow: hidden;
+  }
 
   @include mobiles {
     display: none;

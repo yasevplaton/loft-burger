@@ -13,7 +13,6 @@
 .order__content {
 
   @include tablets {
-    padding-bottom: 18%;
     display: flex;
     flex-direction: column;
     align-items: center;

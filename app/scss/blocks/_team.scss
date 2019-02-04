@@ -9,6 +9,10 @@
 .team__content-container {
   padding: 6rem 6.2rem;
 
+  @include laptops {
+    padding: 20% 7%;
+  }
+
   @include tablets {
     text-align: center;
     padding-bottom: 22%;
