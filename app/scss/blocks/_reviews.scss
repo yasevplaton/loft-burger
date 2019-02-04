@@ -109,15 +109,11 @@
   color: #fff;
   background: $grey;
   transition: .3s;
-  display: none;
+  display: inline-block;
   font-size: .9rem;
 
   &:hover {
     background: rgb(19, 19, 19);
-  }
-
-  @include mobiles {
-    display: inline-block;
   }
 
 }
