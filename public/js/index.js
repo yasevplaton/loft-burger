@@ -1,4 +1,4 @@
-onload = () => {
+onLoad = () => {
   if ( window.innerWidth <= 480 ) {
 
     let revContentArr = document.querySelectorAll('.reviews__content');
