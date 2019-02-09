@@ -1,0 +1,43 @@
+.burgers {
+  background: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%);
+  color: #fff;
+}
+
+.burgers__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burgers__content {
+  display: flex;
+  align-items: center;
+}
+
+.burgers__item {
+  display: flex;
+  align-items: center;
+}
+
+.burgers__order-row {
+  display: flex;
+  align-items: center;
+}
+
+.burgers__image-el {
+  width: 50%;
+}
+
+.burgers__img {
+  max-width: 100%;
+}
+
+.burgers__text-el {
+  width: 50%;
+}
+
+.burgers__desc {
+  font-size: rem(14px);
+  font-weight: 300;
+}

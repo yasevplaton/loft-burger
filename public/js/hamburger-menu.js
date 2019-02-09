@@ -9,6 +9,6 @@ hambMenuIcon.addEventListener('click', () => {
   } else {
     hambMenuIcon.classList.add('close');
     modalNav.style.right = 0;
-    modalNav.style.opacity = 0.99;
+    modalNav.style.opacity = 0.98;
   }
 });

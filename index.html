@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./public/css/main.css">
   </head>
 
-  <body onload="onLoad()">
+  <body>
 
     <div class="wrapper">
       <div class="main-content">
@@ -69,7 +69,7 @@
             </div>
             <a href="#" class="arrow">
               <svg class="arrow-icon" viewBox="0 0 28.685 14.479">
-                <use xlink:href="./public/data/sprite.svg#arrow-scroll"></use>
+                <use xlink:href="./public/data/sprite.svg#arrow"></use>
               </svg>
             </a>
           </div>
@@ -147,7 +147,43 @@
           </div>
         </section>
         <section class="section burgers">
-          Здесь будут бургеры
+          <div class="container burgers__container">
+            <div class="burgers__content">
+              <a href="#" class="left-arrow__link">
+                <div class="left-arrow__icon-wrapper">
+                  <svg class="arrow-icon arrow-icon--left" viewBox="0 0 28.685 14.479">
+                    <use xlink:href="./public/data/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <ul class="burgers__list">
+                <li class="burgers__item">
+                  <div class="burgers__image-el">
+                    <img src="./public/data/img/content/burger-slider/dark-beef-burger.png" class="burgers__img" alt="Фотография бургера">
+                    <div class="burgers__composition"></div>
+                    <div class="burgers__energy"></div>
+                  </div>
+                  <div class="burgers__text-el">
+                    <div class="title title--burgers">Dark BEEF Burger</div>
+                    <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+                      кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
+                      добавлением экзотического соуса чураско.</div>
+                    <div class="burgers__order-row">
+                      <div class="burgers__price">500 рублей</div>
+                      <a href="#" class="btn hero__btn">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="right-arrow__link">
+                <div class="right-arrow__icon-wrapper">
+                  <svg class="arrow-icon arrow-icon--right" viewBox="0 0 28.685 14.479">
+                    <use xlink:href="./public/data/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
         </section>
         <section class="section team">
           <div class="team__content">
@@ -526,7 +562,7 @@
 
   </body>
 
-  <script src="./public/js/index.js"></script>
-  <script src="./public/js/hamburger-menu.js"></script>
+  <!-- <script src="./public/js/index.js"></script>
+  <script src="./public/js/hamburger-menu.js"></script> -->
 
 </html>

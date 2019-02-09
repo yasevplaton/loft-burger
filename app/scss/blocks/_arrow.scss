@@ -3,8 +3,23 @@
   height: rem(14px);
   fill: #fff;
 
+  &--left {
+    transform: rotate(90deg);
+  }
+
+  &--right {
+    transform: rotate(-90deg);
+  }
+
   @include mobiles {
     width: 6.8125rem;
     height: .9rem;
   }
+}
+
+.left-arrow__link, .right-arrow__link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
