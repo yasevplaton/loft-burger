@@ -160,7 +160,12 @@
                 <li class="burgers__item">
                   <div class="burgers__image-el">
                     <img src="./public/data/img/content/burger-slider/dark-beef-burger.png" class="burgers__img" alt="Фотография бургера">
-                    <div class="burgers__composition"></div>
+                    <div class="burgers__composition">
+                      <svg class="burgers__burger-icon" viewBox="0 0 45.748 44.625">
+                        <use xlink:href="./public/data/sprite.svg#burger"></use>
+                      </svg>
+                      <div class="burgers__comporition-text"></div>
+                    </div>
                     <div class="burgers__energy"></div>
                   </div>
                   <div class="burgers__text-el">
@@ -169,7 +174,7 @@
                       кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
                       добавлением экзотического соуса чураско.</div>
                     <div class="burgers__order-row">
-                      <div class="burgers__price">500 рублей</div>
+                      <div class="burgers__price"><span class="burgers__price--value">500</span> рублей</div>
                       <a href="#" class="btn hero__btn">Заказать</a>
                     </div>
                   </div>
@@ -562,7 +567,7 @@
 
   </body>
 
-  <!-- <script src="./public/js/index.js"></script>
-  <script src="./public/js/hamburger-menu.js"></script> -->
+  <script src="./public/js/index.js"></script>
+  <script src="./public/js/hamburger-menu.js"></script>
 
 </html>

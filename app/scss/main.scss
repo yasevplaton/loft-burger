@@ -1,8 +1,7 @@
 // colors
-$red: #e45028;
+$red: #e35028;
 $yellow: #f9b43b;
 $grey: #2f3234;
-$formColor: #e35028;
 
 // devices width
 $laptop-width: 925px;
@@ -10,6 +9,9 @@ $tablet-width: 768px;
 $mini-tablet-width: 500px;
 $mobile-width: 480px;
 $mini-mobile-width: 425px;
+
+// other variables
+$hamburgerAnimationTime: .3s;
 
 
 // media-query mixins

@@ -2,6 +2,11 @@
   width: rem(29px);
   height: rem(14px);
   fill: #fff;
+  transition: transform .3s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 
   &--left {
     transform: rotate(90deg);
@@ -22,4 +27,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.left-arrow__link {
+  &:hover {
+    .arrow-icon--left {
+      transform: rotate(90deg) scale(1.5);
+    }
+  }
+}
+
+.right-arrow__link {
+  &:hover {
+    .arrow-icon--right {
+      transform: rotate(-90deg) scale(1.5);
+    }
+  }
 }

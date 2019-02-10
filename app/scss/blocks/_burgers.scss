@@ -1,5 +1,5 @@
 .burgers {
-  background: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%);
+  background: linear-gradient(to top, $yellow, #eb8c38 48%, $yellow 74%);
   color: #fff;
 }
 
@@ -22,15 +22,38 @@
 
 .burgers__order-row {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .burgers__image-el {
   width: 50%;
+  position: relative;
 }
 
 .burgers__img {
   max-width: 100%;
+}
+
+.burgers__composition {
+  position: absolute;
+  left: 0;
+  top: -30%;
+  width: rem(90px);
+  height: rem(90px);
+  opacity: .4;
+  border-radius: 5px;
+  background-color: $red;
+}
+
+.burgers__energy {
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  width: rem(90px);
+  height: rem(90px);
+  opacity: .4;
+  border-radius: 5px;
+  background-color: $red;
 }
 
 .burgers__text-el {
@@ -40,4 +63,14 @@
 .burgers__desc {
   font-size: rem(14px);
   font-weight: 300;
+}
+
+.burgers__price {
+  font-family: "Gagalin";
+  font-size: rem(30px);
+  color: $red;
+
+  &--value {
+    font-size: rem(72px);
+  }
 }
