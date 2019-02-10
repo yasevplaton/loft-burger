@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1017px;
 }
 
 .burgers__content {
@@ -18,16 +19,38 @@
 .burgers__item {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .burgers__order-row {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
+  padding-top: 5%;
+
+  @include tablets {
+    justify-content: center;
+    padding-top: 0;
+  }
 }
 
 .burgers__image-el {
   width: 50%;
   position: relative;
+  margin-right: 2%;
+
+  @include tablets {
+    width: 60%;
+    height: 50%;
+    margin-right: 0;
+  }
+
+  @include mobiles {
+    width: 91%;
+  }
 }
 
 .burgers__img {
@@ -36,34 +59,153 @@
 
 .burgers__composition {
   position: absolute;
-  left: 0;
-  top: -30%;
+  left: 2%;
+  top: -25%;
   width: rem(90px);
   height: rem(90px);
-  opacity: .4;
   border-radius: 5px;
-  background-color: $red;
+  background-color: rgba($red, .4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1% 0;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+
+    background-color: rgba($red, .9);
+
+    .burgers__tooltip {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+
+  @include tablets {
+    left: -11%;
+    top: -10%;
+  }
+}
+
+.burgers__burger-icon {
+  width: 60%;
+  height: 60%;
+  fill: #fff;
+}
+
+.burgers__composition-text {
+  font-family: "Gagalin";
+  font-size: .9rem;
+}
+
+.burgers__tooltip {
+  position: absolute;
+  cursor: initial;
+  left: -9999px;
+  top: 0;
+  background: rgba(#fff, .9);
+  color: #2f3234;
+  border-radius: 5px;
+  width: auto;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.burgers__table-col {
+
+  padding: .3rem;
+  font-size: rem(14px);
+
+    @include tablets {
+    padding: .1rem;
+  }
+
+  &--title {
+    font-weight: 500;
+    padding-left: 1.3rem;
+  }
+
+  &--weight {
+    text-align: right;
+    padding-left: 4rem;
+    white-space: nowrap;
+    font-weight: 300;
+  }
+
+}
+
+.burgers__table-icon {
+  width: 3rem;
+
+  &--beef {
+    fill: $red;
+  }
+
+  @include tablets {
+    width: 2.5rem;
+  }
 }
 
 .burgers__energy {
   position: absolute;
-  left: 0;
-  bottom: -30%;
+  left: -1%;
+  bottom: -28%;
   width: rem(90px);
   height: rem(90px);
-  opacity: .4;
-  border-radius: 5px;
-  background-color: $red;
+  opacity: .5;
+  font-family: "Gagalin";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+
+  @include tablets {
+    left: unset;
+    bottom: unset;
+    top: -10%;
+    right: -11%;
+  }
 }
+
+.burgers__energy-icon {
+  width: 66%;
+  height: 66%;
+  fill: #fff;
+}
+
+.burgers__energy-value {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: rem(20px);
+}
+
 
 .burgers__text-el {
   width: 50%;
+
+  @include tablets {
+    width: 85%;
+    height: 50%;
+    text-align: center;
+  }
+
+  @include mobiles {
+    width: 95%;
+  }
 }
 
 .burgers__desc {
   font-size: rem(14px);
   font-weight: 300;
+  line-height: 1.71;
 }
+
 
 .burgers__price {
   font-family: "Gagalin";

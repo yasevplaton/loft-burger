@@ -22,6 +22,15 @@
 
   &--burgers {
     line-height: 0.89;
+    margin-bottom: 9%;
+
+    @include tablets {
+      margin-bottom: 3%;
+    }
+
+    @include mobiles {
+      margin-top: 3%;
+    }
   }
 
   &--team {

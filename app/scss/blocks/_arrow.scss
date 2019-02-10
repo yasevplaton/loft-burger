@@ -1,5 +1,5 @@
 .arrow-icon {
-  width: rem(29px);
+  width: 1.8125rem;
   height: rem(14px);
   fill: #fff;
   transition: transform .3s;
@@ -17,7 +17,6 @@
   }
 
   @include mobiles {
-    width: 6.8125rem;
     height: .9rem;
   }
 }
