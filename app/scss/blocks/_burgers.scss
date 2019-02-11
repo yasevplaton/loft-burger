@@ -42,14 +42,27 @@
   position: relative;
   margin-right: 2%;
 
+  @include laptops {
+    width: 67%;
+  }
+
   @include tablets {
     width: 60%;
     height: 50%;
     margin-right: 0;
   }
 
+  @include mini-tablets {
+    width: 97%;
+    margin-bottom: 2%;
+  }
+
   @include mobiles {
     width: 91%;
+  }
+
+  @include mini-mobiles {
+    width: 96%;
   }
 }
 
@@ -214,5 +227,10 @@
 
   &--value {
     font-size: rem(72px);
+
+    @include laptops {
+      font-size: 2.5rem;
+    }
   }
+
 }

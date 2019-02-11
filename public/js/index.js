@@ -1,4 +1,4 @@
-onLoad = () => {
+document.body.onload = () => {
   const revContentArr = document.querySelectorAll('.reviews__content');
   addOrRemoveReviewButton(revContentArr);
 
