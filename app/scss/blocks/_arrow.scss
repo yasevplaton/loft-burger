@@ -1,12 +1,18 @@
+.arrow {
+  &:hover {
+
+    .arrow-icon {
+      transform: scale(1.5);
+    }
+  }
+  
+}
+
 .arrow-icon {
   width: 1.8125rem;
   height: rem(14px);
   fill: #fff;
   transition: transform .3s;
-
-  &:hover {
-    transform: scale(1.5);
-  }
 
   &--left {
     transform: rotate(90deg);
