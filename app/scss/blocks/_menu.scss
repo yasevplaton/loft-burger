@@ -28,13 +28,17 @@ $xPosition: (78%, 87%, 94%);
 
 .menu__item {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   height: 100%;
 
   &--active {
+
+    .menu__label {
+      color: $yellow;
+    }
     .menu__desc {
-      width: auto;
-      padding: 3.75rem 2.1875rem;
+      // width: auto;
+      // padding: 3.75rem 2.1875rem;
 
       @include laptops {
         padding: 2% 2%;
@@ -93,15 +97,20 @@ $xPosition: (78%, 87%, 94%);
   }
 }
 
-.menu__desc {
+.menu__desc-wrapper {
+  overflow: hidden;
   width: 0;
+  transition: width .3s;
+}
+
+.menu__desc {
+  width: 20rem;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  transition: .3s;
+  padding: 2% 2%;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem;
   opacity: 0.93;
   background: rgb(51,50,49);
+  transition: width .3s;
 }

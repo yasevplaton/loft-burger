@@ -65,10 +65,6 @@
         transform: rotate(180deg);
       }
     }
-
-    .team__person-content {
-      height: auto;
-    }
   }
 
   @include tablets {
@@ -81,9 +77,15 @@
 .team__person-name {
   font-family: 'Gagalin', sans-serif;
   color: inherit;
-  display: flex;
+  display: inline-flex;
   font-size: rem(14px);
   align-items: center;
+  transition: color .3s;
+  margin-bottom: .7rem;
+
+  &:hover {
+    color: $yellow;
+  }
 
   &:before {
     content: "";
@@ -94,6 +96,7 @@
     border-right: 5px solid transparent;
     border-top: 7px solid $yellow;
     margin-right: rem(10px);
+    transition: transform .3s;
   }
 
   @include tablets {
@@ -110,11 +113,14 @@
   }
 }
 
+.team__person-content-wrapper {
+  overflow: hidden;
+  height: 0;
+  transition: height .3s;
+}
+
 .team__person-content {
   display: flex;
-  height: 0;
-  overflow: hidden;
-  margin-top: .7rem;
   padding-left: 1rem;
 
   @include tablets {
