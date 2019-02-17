@@ -16,9 +16,37 @@
   align-items: center;
 }
 
+.burgers__slider {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+  max-width: 1000px;
+
+  @include tablets {
+    height: 90vh;
+  }
+}
+
+.burgers__list {
+  display: flex;
+  position: relative;
+  height: 85%;
+  right: 0;
+  transition: right .4s;
+
+  @include tablets {
+    height: unset;
+  }
+}
+
 .burgers__item {
   display: flex;
   align-items: center;
+  width: 80vw;
+  max-width: 1000px;
+  position: relative;
 
   @include tablets {
     flex-direction: column;
@@ -39,8 +67,11 @@
 
 .burgers__image-el {
   width: 50%;
-  position: relative;
+  // position: relative;
   margin-right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include laptops {
     width: 67%;
@@ -68,12 +99,50 @@
 
 .burgers__img {
   max-width: 100%;
+  max-height: 100%;
+}
+
+
+.burgers__text-el {
+  width: 50%;
+
+  @include tablets {
+    width: 85%;
+    height: 50%;
+    text-align: center;
+  }
+
+  @include mobiles {
+    width: 95%;
+  }
+}
+
+.burgers__desc {
+  font-size: rem(14px);
+  font-weight: 300;
+  line-height: 1.71;
+}
+
+
+.burgers__price {
+  font-family: "Gagalin";
+  font-size: rem(30px);
+  color: $red;
+
+  &--value {
+    font-size: rem(72px);
+
+    @include laptops {
+      font-size: 2.5rem;
+    }
+  }
+
 }
 
 .burgers__composition {
   position: absolute;
-  left: 2%;
-  top: -25%;
+  left: 0;
+  top: 0;
   width: rem(90px);
   height: rem(90px);
   border-radius: 5px;
@@ -97,8 +166,8 @@
   }
 
   @include tablets {
-    left: -11%;
-    top: -10%;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -146,6 +215,10 @@
     padding-left: 4rem;
     white-space: nowrap;
     font-weight: 300;
+
+    @include mini-mobiles {
+      padding-left: 1rem;
+    }
   }
 
 }
@@ -165,7 +238,7 @@
 .burgers__energy {
   position: absolute;
   left: -1%;
-  bottom: -28%;
+  bottom: 0;
   width: rem(90px);
   height: rem(90px);
   opacity: .5;
@@ -179,8 +252,8 @@
   @include tablets {
     left: unset;
     bottom: unset;
-    top: -10%;
-    right: -11%;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -196,41 +269,4 @@
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: rem(20px);
-}
-
-
-.burgers__text-el {
-  width: 50%;
-
-  @include tablets {
-    width: 85%;
-    height: 50%;
-    text-align: center;
-  }
-
-  @include mobiles {
-    width: 95%;
-  }
-}
-
-.burgers__desc {
-  font-size: rem(14px);
-  font-weight: 300;
-  line-height: 1.71;
-}
-
-
-.burgers__price {
-  font-family: "Gagalin";
-  font-size: rem(30px);
-  color: $red;
-
-  &--value {
-    font-size: rem(72px);
-
-    @include laptops {
-      font-size: 2.5rem;
-    }
-  }
-
 }

@@ -27,14 +27,14 @@
   }
 }
 
-.left-arrow__link, .right-arrow__link {
+.left-arrow__btn, .right-arrow__btn {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.left-arrow__link {
+.left-arrow__btn {
   &:hover {
     .arrow-icon--left {
       transform: rotate(90deg) scale(1.5);
@@ -42,7 +42,7 @@
   }
 }
 
-.right-arrow__link {
+.right-arrow__btn {
   &:hover {
     .arrow-icon--right {
       transform: rotate(-90deg) scale(1.5);

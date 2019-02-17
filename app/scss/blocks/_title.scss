@@ -37,6 +37,14 @@
     }
   }
 
+  &--burgers-nyc {
+    font-size: 3.5rem;
+
+    @include laptops {
+      font-size: 2.5rem;
+    }
+  }
+
   &--team {
     color: $yellow;
     margin-bottom: 2rem;
