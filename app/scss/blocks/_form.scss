@@ -149,6 +149,13 @@
   }
 }
 
+.form__error {
+  font-family: "Ubuntu";
+  font-size: rem(12px);
+  font-weight: 300;
+  color: red;
+}
+
 .form__radio, .form__checkbox {
   display: none;
 }

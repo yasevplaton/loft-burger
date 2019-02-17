@@ -4,38 +4,56 @@
   width: 100%;
   height: 100%;
   top: 0;
-}
-
-.opened {
-  opacity: 1;
+  opacity: 0;
   transition: opacity .3s;
 }
 
 .overlay {
-  background: rgba(00, 00, 00, .5);
+  background: rgba(51, 50, 49, .93);
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-}
-
-.popup__container {
-  padding: 10px;
-  border-radius: 5px;
-  background: #2d3436;
-  color: #fff;
   position: relative;
 }
 
-.popup__close {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #e84393;
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  padding: rem(30px) rem(20px);
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup__content-title {
+  font-family: "Gagalin";
+  font-size: rem(14px);
+  margin-bottom: 3%;
+}
+
+.popup__content-text {
+  font-family: "Ubuntu";
+  font-size: rem(14px);
+  font-weight: 300;
+
+  &--order {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+}
+
+.popup__close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: rem(4px);
+  right: rem(4px);
 }
 
 .popup__close:after {
@@ -43,6 +61,8 @@
   content: "+";
   top: 50%;
   left: 50%;
+  display: block;
   transform: translate(-50%, -50%) rotate(45deg);
-  color: #2d3436;
+  color: $red;
+  font-size: rem(32px);
 }

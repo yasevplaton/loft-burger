@@ -165,7 +165,8 @@
                     </div>
                     <div class="burgers__text-el">
                       <div class="title title--burgers">Dark BEEF Burger</div>
-                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                        тремя
                         кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
                         добавлением экзотического соуса чураско.</div>
                       <div class="burgers__order-row">
@@ -252,7 +253,8 @@
                     </div>
                     <div class="burgers__text-el">
                       <div class="title title--burgers">Chicken burger</div>
-                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                        тремя
                         кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
                         добавлением экзотического соуса чураско.</div>
                       <div class="burgers__order-row">
@@ -334,12 +336,13 @@
                   </li>
                   <li class="burgers__item">
                     <div class="burgers__image-el">
-                      <img src="./public/data/img/content/burger-slider/NYC-Diner-Bacon-Cheeseburger.png" class="burgers__img"
-                        alt="Фотография бургера">
+                      <img src="./public/data/img/content/burger-slider/NYC-Diner-Bacon-Cheeseburger.png"
+                        class="burgers__img" alt="Фотография бургера">
                     </div>
                     <div class="burgers__text-el">
                       <div class="title title--burgers title--burgers-nyc">NYC Diner Bacon Cheeseburger</div>
-                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                        тремя
                         кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
                         добавлением экзотического соуса чураско.</div>
                       <div class="burgers__order-row">
@@ -426,7 +429,8 @@
                     </div>
                     <div class="burgers__text-el">
                       <div class="title title--burgers">Spicy Shrimp Burger</div>
-                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                        тремя
                         кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
                         добавлением экзотического соуса чураско.</div>
                       <div class="burgers__order-row">
@@ -513,7 +517,8 @@
                     </div>
                     <div class="burgers__text-el">
                       <div class="title title--burgers">Burger Sandwich</div>
-                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+                      <div class="burgers__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                        тремя
                         кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
                         добавлением экзотического соуса чураско.</div>
                       <div class="burgers__order-row">
@@ -765,17 +770,16 @@
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews2.jpg)">
               <div class="reviews__content">
-                <h3 class="reviews__name">Константин Спилберг</h3>
+                <h3 class="reviews__name">Афанасий Кудрявцев</h3>
                 <div class="reviews__text">
-                  <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
-                    булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <p>Не очень понимаю, что все находят в этих бургерах.</p>
                 </div>
                 <button type="button" class="btn reviews__btn">Подробнее</button>
               </div>
             </li>
             <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews3.jpg)">
               <div class="reviews__content">
-                <h3 class="reviews__name">Константин Спилберг</h3>
+                <h3 class="reviews__name">Анжелика Хорошенькая</h3>
                 <div class="reviews__text">
                   <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
                     булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -842,16 +846,18 @@
           <div class="container order__container">
             <div class="order__content">
               <h2 class="title title--order">Закажите доставку</h2>
-              <form action="#" class="form">
+              <form class="form" id="form">
                 <div class="form__col">
                   <div class="form__row">
                     <label for="name" class="form__block">
                       <h3 class="form__label">Имя</h3>
-                      <input type="text" class="form__input" name="name" id="name">
+                      <input type="text" class="form__input" name="name" id="name" required>
+                      <div class="form__error"></div>
                     </label>
                     <label for="phone" class="form__block">
                       <h3 class="form__label">Телефон</h3>
-                      <input type="text" class="form__input" name="phone" id="phone">
+                      <input type="text" class="form__input" name="phone" id="phone" required>
+                      <div class="form__error"></div>
                     </label>
                   </div>
                   <div class="form__row">
@@ -883,7 +889,8 @@
                   <div class="form__row">
                     <label for="comment" class="form__block">
                       <h3 class="form__label">Комментарий</h3>
-                      <textarea class="form__textarea" name="comment" id="comment"></textarea>
+                      <textarea class="form__textarea" name="comment" id="comment" required></textarea>
+                      <div class="form__error"></div>
                     </label>
                   </div>
                   <div class="form__row form__row--radio">
@@ -1000,23 +1007,27 @@
       </div>
     </div>
 
+    <script type="template" id="modal-template">
+        <div class="overlay">
+          <div class="popup__container">
+            <div class="popup__content">
+              <h4 class="popup__content-title"></h4>
+              <div class="popup__content-text"></div>
+              <div class="popup__content-other"></div>
+            </div>
+            <button type="button" class="popup__close"></button>
+          </div>
+        </div>
+    </script>
+
   </body>
 
   <script src="./public/js/review-buttons.js"></script>
   <script src="./public/js/hamburger-menu.js"></script>
   <script src="./public/js/acco.js"></script>
   <script src="./public/js/slider.js"></script>
-
-  <script type="template" id="modal-template">
-    <div class="overlay">
-      <div class="popup__container">
-        <a href="#" class="popup__close"></a>
-        <div class="popup__content">
-          <h1>sdasd</h1>
-        </div>
-      </div>
-    </div>
-  </script>
+  <script src="./public/js/modals.js"></script>
+  <script src="./public/js/form-handler.js"></script>
 
 
 </html>
