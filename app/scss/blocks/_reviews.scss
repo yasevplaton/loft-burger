@@ -20,6 +20,22 @@
     .reviews__content {
       opacity: 1;
     }
+
+    .reviews__name {
+      transform: scale(1);
+    }
+
+    .reviews__text {
+      transform: scale(1);
+    }
+
+    .reviews__btn {
+      transform: scale(1);
+    }
+
+    .reviews__btn-mobile {
+      transform: scale(1);
+    }
   }
 
   @include tablets {
@@ -54,6 +70,8 @@
   font-family: "Gagalin";
   font-size: 0.875rem;
   margin-bottom: 7%;
+  transform: scale(.8);
+  transition: transform .3s;
 
   @include tablets {
     margin-bottom: 0;
@@ -70,6 +88,8 @@
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem;
+  transform: scale(.8);
+  transition: transform .3s;
 
   @include tablets {
     max-height: 60%;
@@ -84,7 +104,8 @@
 .reviews__btn {
   color: #fff;
   background: $grey;
-  transition: .3s;
+  transform: scale(.8);
+  transition: all .3s;
 
   &:hover {
     background: rgb(19, 19, 19);
@@ -99,9 +120,10 @@
 .reviews__btn-mobile {
   color: #fff;
   background: $grey;
-  transition: .3s;
   display: inline-block;
   font-size: .9rem;
+  transform: scale(.8);
+  transition: all .3s;
 
   &:hover {
     background: rgb(19, 19, 19);
