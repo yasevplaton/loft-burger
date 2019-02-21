@@ -1,6 +1,6 @@
 const hambMenuIcon = document.querySelector('.hamburger-menu');
 const modalNav = document.querySelector('.modal-nav');
-const navItems = modalNav.querySelectorAll('.modal-nav__item');
+const modalNavItems = modalNav.querySelectorAll('.modal-nav__item');
 const hamburgerAnimationTime = 300;
 
 // add click listener to hamburger icon
@@ -18,7 +18,7 @@ hambMenuIcon.addEventListener('click', () => {
 });
 
 // close modal nav when user select navigation item
-Array.from(navItems).forEach(item => {
+Array.from(modalNavItems).forEach(item => {
   item.addEventListener('click', () => {
     closeModalNav();
   });
@@ -34,12 +34,14 @@ document.body.addEventListener('keydown', e => {
 
 // functions to open and close modal navigation
 function openModalNav() {
+  document.body.style.overflow = "hidden";
   hambMenuIcon.classList.add('close');
   modalNav.style.right = 0;
   modalNav.style.opacity = 0.98;
 }
 
 function closeModalNav() {
+  document.body.style.overflow = "auto";
   hambMenuIcon.classList.remove('close');
   modalNav.style.opacity = 0;
   setTimeout(() => modalNav.style.right = "9999px", hamburgerAnimationTime);

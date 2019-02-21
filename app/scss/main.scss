@@ -57,9 +57,10 @@ $hamburgerAnimationTime: .3s;
 // layout rules
 @import "./layout/fonts";
 @import "./layout/base";
-@import "./blocks/hero";
 
 // blocks
+@import "./blocks/main-content";
+@import "./blocks/hero";
 @import "./blocks/pointer";
 @import "./blocks/header";
 @import "./blocks/logo";

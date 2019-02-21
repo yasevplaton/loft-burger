@@ -1,0 +1,12 @@
+.main-content__wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  position: absolute;
+  top: 0;
+  transition: top .7s;
+}
