@@ -76,6 +76,9 @@ $(document).ready(function () {
     mainContentWrapper.css('overflow', 'initial');
     mainContentWrapper.css('height', 'initial');
     mainContent.css('position', 'static');
+    jqModalNavItems.off('click');
+    orderLinks.off('click');
+    arrowLink.off('click');
   }
 
 
@@ -156,6 +159,7 @@ $(document).ready(function () {
       }
     }
   }
+
 
 });
 
