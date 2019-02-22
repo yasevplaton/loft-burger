@@ -59,8 +59,31 @@ $(document).ready(function () {
 
   // add mousewheel listener to sections
   let wheelProcessing = false;
-  sections.on('wheel', function (e) {
+  sections.on('wheel', wheelHandler);
 
+
+  // add touch events for mobiles
+  let ts;
+  sections.on('touchstart', function (e) { ts = e.originalEvent.touches[0].clientY; });
+  sections.on('touchend', touchEndHandler);
+
+  // function to move page to required section
+  function moveTo(sectionID) {
+    const reqIndex = sections.filter(sectionID).index();
+
+    pointerItems.removeClass('active');
+    pointerItems.filter(function (index) {
+      return index === reqIndex;
+    }).addClass('active');
+
+    const reqTop = reqIndex * 100 * (-1);
+    curTop = reqTop;
+
+    mainContent.css('top', `${reqTop}vh`);
+  }
+
+  // function to handle wheel action
+  function wheelHandler(e) {
     e.preventDefault();
 
     if (!wheelProcessing) {
@@ -94,19 +117,11 @@ $(document).ready(function () {
 
 
     }
+  }
 
-  });
-
-
-  // add touch events for mobiles
-  let ts;
-  sections.on('touchstart', function (e) {
-    ts = e.originalEvent.touches[0].clientY;
-  });
-
-  sections.on('touchend', function (e) {
+  // function to handle touchend action
+  function touchEndHandler(e) {
     const te = e.originalEvent.changedTouches[0].clientY;
-
 
     if (ts > te + 5) {
 
@@ -126,21 +141,6 @@ $(document).ready(function () {
         moveTo(activeSection);
       }
     }
-  });
-
-  // function to move page to required section
-  function moveTo(sectionID) {
-    const reqIndex = sections.filter(sectionID).index();
-
-    pointerItems.removeClass('active');
-    pointerItems.filter(function (index) {
-      return index === reqIndex;
-    }).addClass('active');
-
-    const reqTop = reqIndex * 100 * (-1);
-    curTop = reqTop;
-
-    mainContent.css('top', `${reqTop}vh`);
   }
 
 });
