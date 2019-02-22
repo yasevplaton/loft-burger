@@ -1,0 +1,23 @@
+.how-we-work {
+  background: url("../data/img/bg/how-we-work.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.how-we-work__container {
+  justify-content: center;
+}
+
+.how-we-work__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2f3234;
+}
+
+.how-we-work__video {
+  width: 660px;
+  height: 370px;
+  background-color: #000000;
+}

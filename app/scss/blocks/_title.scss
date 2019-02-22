@@ -1,6 +1,7 @@
 .title {
   font-family: "Gagalin";
   font-size: 4.5rem;
+  color: #2f3234;
 
   &--hero {
     color: $yellow;
@@ -23,6 +24,7 @@
   &--burgers {
     line-height: 0.89;
     margin-bottom: 9%;
+    color: #fff;
 
     @include laptops {
       font-size: 3.5rem;
@@ -53,10 +55,21 @@
   &--menu {
     display: inline-block;
     margin: 5.7rem;
+    color: #fff;
 
     @include laptops {
       margin: 5% 1%;
       font-size: 3.5rem;
+    }
+  }
+
+  &--how-we-work {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include mini-tablets {
+      font-size: 3.5rem;
+      margin-bottom: 0;
     }
   }
 

@@ -40,8 +40,8 @@ $(document).ready(function () {
 
   });
 
-   // add click listener on order links
-  orderLinks.on('click', function(e) {
+  // add click listener on order links
+  orderLinks.on('click', function (e) {
     e.preventDefault();
 
     const reqSectionId = $(this).attr('href');
@@ -49,7 +49,7 @@ $(document).ready(function () {
   });
 
   // add click listener on arrow link in hero section
-  arrowLink.on('click', function(e) {
+  arrowLink.on('click', function (e) {
     e.preventDefault();
 
     const reqSectionId = $(this).attr('href');
@@ -59,7 +59,7 @@ $(document).ready(function () {
 
   // add mousewheel listener to sections
   let wheelProcessing = false;
-  sections.on('mousewheel', function (e) {
+  sections.on('wheel', function (e) {
 
     e.preventDefault();
 
@@ -97,6 +97,38 @@ $(document).ready(function () {
 
   });
 
+
+  // add touch events for mobiles
+  let ts;
+  sections.on('touchstart', function (e) {
+    ts = e.originalEvent.touches[0].clientY;
+  });
+
+  sections.on('touchend', function (e) {
+    const te = e.originalEvent.changedTouches[0].clientY;
+
+
+    if (ts > te + 5) {
+
+      if (curTop > minTop) {
+        activeSection = $(e.currentTarget).next();
+
+        moveTo(activeSection);
+      }
+      
+    } else if (ts < te - 5) {
+
+
+      if (curTop < maxTop) {
+  
+        activeSection = $(e.currentTarget).prev();
+
+        moveTo(activeSection);
+      }
+    }
+  });
+
+  // function to move page to required section
   function moveTo(sectionID) {
     const reqIndex = sections.filter(sectionID).index();
 
