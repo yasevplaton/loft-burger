@@ -79,6 +79,8 @@ $(document).ready(function () {
     jqModalNavItems.off('click');
     orderLinks.off('click');
     arrowLink.off('click');
+    pointerItems.off('click');
+    navItems.off('click');
   }
 
 
