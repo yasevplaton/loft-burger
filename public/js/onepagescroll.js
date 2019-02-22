@@ -8,6 +8,7 @@ $(document).ready(function () {
   const arrowLink = $('.arrow');
   const jqModalNavItems = $('.modal-nav__item');
   const mainContent = $('.main-content');
+  const mainContentWrapper = $('.main-content__wrapper');
 
   const minTop = (sections.length - 1) * 100 * (-1);
   const maxTop = 0;
@@ -66,6 +67,19 @@ $(document).ready(function () {
   let ts;
   sections.on('touchstart', function (e) { ts = e.originalEvent.touches[0].clientY; });
   sections.on('touchend', touchEndHandler);
+
+
+  // disable one page scroll for devices width height less than 650px
+  if (window.innerHeight < 650) {
+    sections.off('touchend');
+    sections.off('wheel');
+    mainContentWrapper.css('overflow', 'initial');
+    mainContentWrapper.css('height', 'initial');
+    mainContent.css('position', 'static');
+  }
+
+
+
 
   // function to move page to required section
   function moveTo(sectionID) {
