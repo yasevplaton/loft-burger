@@ -132,7 +132,7 @@ $(document).ready(function () {
 
       }
 
-      setTimeout(() => wheelProcessing = false, 1500);
+      setTimeout(() => wheelProcessing = false, 1000 + 300);
 
 
     }

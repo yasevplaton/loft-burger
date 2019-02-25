@@ -8,8 +8,9 @@
     <title>Loft Burger</title>
     <link rel="shortcut icon" href="./public/data/img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/main.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=f0d5bfbd-e861-4815-bfb1-f684bc9fd9d8&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f0d5bfbd-e861-4815-bfb1-f684bc9fd9d8&lang=ru_RU"
+      type="text/javascript">
+      </script>
   </head>
 
   <body>
@@ -862,7 +863,35 @@
             <div class="container how-we-work__container">
               <div class="how-we-work__content">
                 <h2 class="title title--how-we-work">Как мы работаем</h2>
-                <div class="how-we-work__video"></div>
+                <div class="player">
+                  <div class="player__wrapper">
+                    <video id="myVideo" controls autoplay>
+                      <source id="mp4_src" src="mov_bbb.mp4" type="video/mp4">
+                      <source id="ogg_src" src="mov_bbb.ogg" type="video/ogg">
+                      Your browser does not support HTML5 video.
+                    </video>
+                    <div class="player__splash"></div>
+                  </div>
+                  <div class="player__controls">
+                    <button class="player__start">
+                      <svg class="player__start-icon" viewBox="0 0 300 300">
+                        <use xlink:href="./public/data/sprite.svg#play"></use>
+                      </svg>
+                      <div class="player__pause-icon"></div>
+                    </button>
+                    <div class="player__playback">
+                      <button class="player__playback-button"></button>
+                    </div>
+                    <div class="player__volume">
+                      <svg class="player__volume-icon" viewBox="0 0 300 300">
+                        <use xlink:href="./public/data/sprite.svg#volume"></use>
+                      </svg>
+                      <div class="player__volume-runner">
+                        <button class="player__volume-runner-btn"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
