@@ -53,9 +53,10 @@ table {
 }
 
 .wrapper {
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
   min-height: 100%;
-  width: 100%;
+  // width: 100%;
   min-width: 320px;
 }
 
@@ -71,6 +72,7 @@ table {
 
 .section {
   width: 100vw;
+  min-width: 320px;
   height: 100vh;
   min-height: 650px;
 }

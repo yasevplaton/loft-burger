@@ -27,6 +27,11 @@
   font-size: 0.875rem;
   text-transform: initial;
   margin-left: .5rem;
+  transition: color .3s;
+
+  &:hover {
+    color: $red;
+  }
 
   @include mobiles {
     font-size: 1rem;

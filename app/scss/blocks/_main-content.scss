@@ -1,12 +1,14 @@
 .main-content__wrapper {
-  width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
+  min-width: 320px;
 }
 
 .main-content {
   position: absolute;
   top: 0;
   transition: top 1s;
+  will-change: top;
 }
