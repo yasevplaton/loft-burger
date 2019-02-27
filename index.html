@@ -8,9 +8,7 @@
     <title>Loft Burger</title>
     <link rel="shortcut icon" href="./public/data/img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/main.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=f0d5bfbd-e861-4815-bfb1-f684bc9fd9d8&lang=ru_RU"
-      type="text/javascript">
-      </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f0d5bfbd-e861-4815-bfb1-f684bc9fd9d8&lang=ru_RU"></script>
   </head>
 
   <body>
@@ -18,7 +16,7 @@
     <div class="wrapper">
       <div class="main-content__wrapper">
         <div class="main-content">
-          <section class="section hero" id="section-hero">
+          <div class="section hero" id="section-hero">
             <div class="container hero__container">
               <header class="header">
                 <div class="header__col header__col--left">
@@ -102,8 +100,8 @@
                 </li>
               </ul>
             </div>
-          </section>
-          <section class="section about-us" id="section-about-us">
+          </div>
+          <div class="section about-us" id="section-about-us">
             <div class="container about-us__container">
               <div class="about-us__content">
                 <h2 class="title title--about-us">Мы лучшие</h2>
@@ -152,16 +150,16 @@
                 </div>
               </div>
             </div>
-          </section>
-          <section class="section burgers" id="section-burgers">
+          </div>
+          <div class="section burgers" id="section-burgers">
             <div class="container burgers__container">
               <div class="burgers__content">
                 <button type="button" class="left-arrow__btn">
-                  <div class="left-arrow__icon-wrapper">
+                  <span class="left-arrow__icon-wrapper">
                     <svg class="arrow-icon arrow-icon--left" viewBox="0 0 28.685 14.479">
                       <use xlink:href="./public/data/sprite.svg#arrow"></use>
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div class="burgers__slider">
                   <ul class="burgers__list">
@@ -608,16 +606,16 @@
                   </ul>
                 </div>
                 <button type="button" class="right-arrow__btn">
-                  <div class="right-arrow__icon-wrapper">
+                  <span class="right-arrow__icon-wrapper">
                     <svg class="arrow-icon arrow-icon--right" viewBox="0 0 28.685 14.479">
                       <use xlink:href="./public/data/sprite.svg#arrow"></use>
                     </svg>
-                  </div>
+                  </span>
                 </button>
               </div>
             </div>
-          </section>
-          <section class="section team" id="section-team">
+          </div>
+          <div class="section team" id="section-team">
             <div class="team__content">
               <div class="team__content-container">
                 <h2 class="title title--team">Команда</h2>
@@ -685,8 +683,8 @@
                 </ul>
               </div>
             </div>
-          </section>
-          <section class="section menu" id="section-menu">
+          </div>
+          <div class="section menu" id="section-menu">
             <h2 class="title title--menu">Меню</h2>
             <ul class="menu__list accordeon">
               <li class="menu__item">
@@ -768,8 +766,8 @@
                 </div>
               </li>
             </ul>
-          </section>
-          <section class="section reviews" id="section-reviews">
+          </div>
+          <div class="section reviews" id="section-reviews">
             <ul class="reviews__list">
               <li class="reviews__item" style="background-image: url(./public/data/img/content/reviews/reviews1.jpg)">
                 <div class="reviews__content">
@@ -858,8 +856,8 @@
                 </div>
               </li>
             </ul>
-          </section>
-          <section class="section how-we-work" id="section-how-we-work">
+          </div>
+          <div class="section how-we-work" id="section-how-we-work">
             <div class="container how-we-work__container">
               <div class="how-we-work__content">
                 <h2 class="title title--how-we-work">Как мы работаем</h2>
@@ -873,15 +871,16 @@
                       <svg class="player__start-icon" viewBox="0 0 300 300">
                         <use xlink:href="./public/data/sprite.svg#play"></use>
                       </svg>
-                      <div class="player__pause-icon"></div>
+                      <span class="player__pause-icon"></span>
                     </button>
-                    <input type="range" class="player__playback" name="playback" min="0" max="100" value="0" step="0.001">
+                    <input type="range" class="player__playback" name="playback" min="0" max="100" value="0"
+                      step="0.001">
                     <div class="player__volume">
                       <button class="player__volume-btn">
                         <svg class="player__volume-icon" viewBox="0 0 300 300">
                           <use xlink:href="./public/data/sprite.svg#volume"></use>
                         </svg>
-                        <div class="player__volume-muted"></div>
+                        <span class="player__volume-muted"></span>
                       </button>
                       <input type="range" class="player__volume-runner" name="volume" min="0" max="100" value="50"
                         step="1">
@@ -890,8 +889,8 @@
                 </div>
               </div>
             </div>
-          </section>
-          <section class="section order" id="section-order">
+          </div>
+          <div class="section order" id="section-order">
             <div class="container order__container">
               <div class="order__content">
                 <h2 class="title title--order">Закажите доставку</h2>
@@ -899,37 +898,37 @@
                   <div class="form__col">
                     <div class="form__row">
                       <label for="name" class="form__block">
-                        <h3 class="form__label">Имя</h3>
+                        <span class="form__label">Имя</span>
                         <input type="text" class="form__input" name="name" id="name" required>
-                        <div class="form__error"></div>
+                        <span class="form__error"></span>
                       </label>
                       <label for="phone" class="form__block">
-                        <h3 class="form__label">Телефон</h3>
+                        <span class="form__label">Телефон</span>
                         <input type="text" class="form__input" name="phone" id="phone" required>
-                        <div class="form__error"></div>
+                        <span class="form__error"></span>
                       </label>
                     </div>
                     <div class="form__row">
                       <label for="street" class="form__block">
-                        <h3 class="form__label">Улица</h3>
+                        <span class="form__label">Улица</span>
                         <input type="text" class="form__input" name="street" id="street">
                       </label>
                     </div>
                     <div class="form__row">
                       <label for="house" class="form__block">
-                        <h3 class="form__label">Дом</h3>
+                        <span class="form__label">Дом</span>
                         <input type="text" class="form__input" name="house" id="house">
                       </label>
                       <label for="house-part" class="form__block">
-                        <h3 class="form__label">Корпус</h3>
+                        <span class="form__label">Корпус</span>
                         <input type="text" class="form__input" name="house-part" id="house-part">
                       </label>
                       <label for="apartment" class="form__block form__block--margin-del">
-                        <h3 class="form__label">Квартира</h3>
+                        <span class="form__label">Квартира</span>
                         <input type="text" class="form__input" name="apartment" id="apartment">
                       </label>
                       <label for="floor" class="form__block form__block--mobile-del">
-                        <h3 class="form__label">Этаж</h3>
+                        <span class="form__label">Этаж</span>
                         <input type="text" class="form__input" name="floor" id="floor">
                       </label>
                     </div>
@@ -937,28 +936,28 @@
                   <div class="form__col">
                     <div class="form__row">
                       <label for="comment" class="form__block">
-                        <h3 class="form__label">Комментарий</h3>
+                        <span class="form__label">Комментарий</span>
                         <textarea class="form__textarea" name="comment" id="comment" required></textarea>
-                        <div class="form__error"></div>
+                        <span class="form__error"></span>
                       </label>
                     </div>
                     <div class="form__row form__row--radio">
                       <label for="card-no" class="form__block form__block--inline" tabindex="0">
                         <input type="radio" class="form__radio" name="card" id="card-no" value="no">
                         <span class="form__radio-custom"></span>
-                        <h3 class="form__label form__label--inline">Потребуется сдача</h3>
+                        <span class="form__label form__label--inline">Потребуется сдача</span>
                       </label>
                       <label for="card-yes" class="form__block form__block--inline" tabindex="0">
                         <input type="radio" class="form__radio" name="card" id="card-yes" value="yes" checked>
                         <span class="form__radio-custom"></span>
-                        <h3 class="form__label form__label--inline">Оплата по карте</h3>
+                        <span class="form__label form__label--inline">Оплата по карте</span>
                       </label>
                     </div>
                     <div class="form__row">
                       <label for="no-callback" class="form__block form__block--inline" tabindex="0">
                         <input type="checkbox" class="form__checkbox" name="no-callback" id="no-callback" checked>
                         <span class="form__checkbox-custom"></span>
-                        <h3 class="form__label form__label--inline">Не перезванивать</h3>
+                        <span class="form__label form__label--inline">Не перезванивать</span>
                       </label>
                     </div>
                     <div class="form__row form__row--btns">
@@ -969,8 +968,8 @@
                 </form>
               </div>
             </div>
-          </section>
-          <section class="section contacts" id="section-contacts">
+          </div>
+          <div class="section contacts" id="section-contacts">
             <div id="map" class="map"></div>
             <footer class="footer">
               <div class="container footer__container">
@@ -1021,7 +1020,7 @@
                 </div>
               </div>
             </footer>
-          </section>
+          </div>
         </div>
       </div>
       <div class="pointer">
@@ -1057,7 +1056,7 @@
       </div>
     </div>
 
-    <script type="template" id="modal-template">
+    <script type="text/template" id="modal-template">
         <div class="overlay">
           <div class="popup__container">
             <div class="popup__content">
@@ -1070,20 +1069,20 @@
         </div>
     </script>
 
+    <script src="./public/js/lib/jquery-3.3.1.min.js"></script>
+
+    <script src="./public/js/onepagescroll.js"></script>
+    <script src="./public/js/review-buttons.js"></script>
+    <script src="./public/js/hamburger-menu.js"></script>
+    <script src="./public/js/acco.js"></script>
+    <script src="./public/js/slider.js"></script>
+    <script src="./public/js/modals.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./public/js/player.js"></script>
+    <script src="./public/js/form-handler.js"></script>
+    <script src="./public/js/map.js"></script>
+
   </body>
-
-  <script src="./public/js/lib/jquery-3.3.1.min.js"></script>
-
-  <script src="./public/js/onepagescroll.js"></script>
-  <script src="./public/js/review-buttons.js"></script>
-  <script src="./public/js/hamburger-menu.js"></script>
-  <script src="./public/js/acco.js"></script>
-  <script src="./public/js/slider.js"></script>
-  <script src="./public/js/modals.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="./public/js/player.js"></script>
-  <script src="./public/js/form-handler.js"></script>
-  <script src="./public/js/map.js"></script>
 
 
 </html>

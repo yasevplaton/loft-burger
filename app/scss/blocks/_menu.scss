@@ -37,15 +37,9 @@ $xPosition: (78%, 87%, 94%);
       color: $yellow;
     }
     .menu__desc {
-      // width: auto;
-      // padding: 3.75rem 2.1875rem;
 
       @include laptops {
         padding: 2% 2%;
-      }
-
-      @include mobiles {
-        padding: 1.75rem 1.1875rem;
       }
     }
   }
@@ -113,4 +107,9 @@ $xPosition: (78%, 87%, 94%);
   opacity: 0.93;
   background: rgb(51,50,49);
   transition: width .3s;
+  overflow-y: auto;
+
+  @include mini-mobiles {
+    width: 16rem;
+  }
 }

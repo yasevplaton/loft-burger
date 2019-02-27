@@ -141,7 +141,7 @@
 
 .burgers__composition {
   position: absolute;
-  left: 0;
+  left: 2px;
   top: 0;
   width: rem(90px);
   height: rem(90px);
@@ -163,11 +163,6 @@
       left: 100%;
       opacity: 1;
     }
-  }
-
-  @include tablets {
-    left: 0;
-    top: 0;
   }
 }
 
